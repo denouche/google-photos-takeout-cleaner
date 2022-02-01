@@ -1,5 +1,9 @@
 #!/bin/bash
-
+echo "ici"
+echo "in" > /input/test
+echo "out" > /output/test
+echo "la"
+exit 0
 cd /input
 date
 cat takeout-* | tar xzivf - 2> /input/tar_error.logs 1> /input/tar_output.logs
