@@ -8,7 +8,7 @@ Then execute the short script below to extract, process and organize all the fil
 docker pull denouche/google-photos-takeout-cleaner:main
 
 export INPUT=/path/to/folder  # path to folder containing all takeout*.tgz files
-export OUTPUT=/output/folder  # path where all the processed photos will be stored
+export OUTPUT=/output/folder  # path where all the processed photos will be stored. Give an empty folder.
 
 docker run -v $INPUT:/input -v $OUTPUT:/output --rm -it denouche/google-photos-takeout-cleaner:main
 ```
