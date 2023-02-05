@@ -62,7 +62,7 @@ main() {
 	fi
 
 	echo "Starting gpth processing..."
-	gpth-linux --no-interactive -i /input/Takeout -o /output --divide-to-dates
+	/gpth-linux --no-interactive -i /input/Takeout -o /output --divide-to-dates
 	echo "Processing done"
 
 	date
