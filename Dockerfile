@@ -5,5 +5,4 @@ RUN curl -s https://api.github.com/repos/TheLastGimbus/GooglePhotosTakeoutHelper
 RUN chmod +x gpth-linux
 COPY entrypoint.sh /entrypoint.sh
 
-CMD ["/entrypoint.sh"]
-
+ENTRYPOINT ["/entrypoint.sh"]
